@@ -12,7 +12,8 @@ int main(int argc, char **argv)
 	char iname[15], oname[15];
 	int color, x, y, i=0, red, green, blue,tmp;
 	long w,h;
-	omp_sched_t def_sched; int def_chunk_size;
+	omp_sched_t def_sched; 
+	int def_chunk_size;
 	omp_get_schedule(&def_sched,&def_chunk_size);
 	printf("Deafault %d %d \n",def_sched,def_chunk_size);
 	printf("Size\t\tDefault\t\tStatic\t\tDynamic\t\tGuided\n");
